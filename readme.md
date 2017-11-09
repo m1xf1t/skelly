@@ -1,0 +1,3 @@
+# Skelly
+
+Documentation coming soon.
