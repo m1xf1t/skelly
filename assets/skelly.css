@@ -5,6 +5,7 @@
  * Version: 1.0.0
  */
 @import './mobile.css';
+@import './fonts.css';
 * {
     margin:0;
     padding:0;

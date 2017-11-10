@@ -1,41 +1,76 @@
 <html>
 <head>
     <title>Skelly</title>
-    <link rel="stylesheet" href="./skelly.css">
+    <link rel="stylesheet" href="./assets/skelly.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Ubuntu" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <!-- Facebook Open Graph -->
+    <meta property="og:title" content="Skelly" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://itspjbell.com" />
+    <meta property="og:image" content="./assets/images/fb-og.jpg" /> 
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="This is an example description." />
+    <meta name="twitter:site" content="@skelly" />
+    <meta name="twitter:creator" content="@skelly" />
 </head>
 <body>
 
     <nav class="fixed light-bg shadow">
-        <ul>
-            <li class="brand">
-                <a href="index.html">Brand</a>
-            </li>
-            <li class="hide">
-                <a href="#two">Left</a>
-            </li>
-            <li class="hide">
-                <a href="#two">Left</a>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <a href="#three">Right</a>
-            </li>
-            <li>
-                <a href="#four">Right</a>
-            </li>
-            <li class="nav-btn">
-                <a href="#four">Right</a>
-            </li>
-        </ul>
+        <div class="desktop-nav">
+            <ul>
+                <li class="brand">
+                    <a href="index.html">Brand</a>
+                </li>
+                <li class="hide">
+                    <a href="#two">Left</a>
+                </li>
+                <li class="hide">
+                    <a href="#two">Left</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#three"><i class="ion-home"></i></a>
+                </li>
+                <li>
+                    <a href="#four">Item</a>
+                </li>
+                <li>
+                    <a href="#five">Item</a>
+                </li>
+                <li class="nav-btn">
+                    <a href="#four" class="round">
+                        Button
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile-nav">
+            <ul>
+                <li class="brand">
+                    <a href="index.html">Brand</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#"><i class="ion-android-menu"></i></a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
-    <section class="wf">
-        <div class="box-full">
+    <section class="wf" style="background:url('https://picsum.photos/2000/800/?random') no-repeat center;-webkit-background-size:cover;">
+        <div class="box-full foreground">
             <div class="wrapper">
-                <p class="center">1</p> 
+               <h1 class="center light title ubuntu">Title</h1>
+               <p class="center light sub-title">This is a sub-title</p>
             </div>
         </div>
+        <div class="dark-overlay"></div>
     </section>
 
     <section class="wf">
@@ -46,13 +81,15 @@
         </div>
     </section>
 
-    <footer class="wf">
+    <footer class="wf dark-bg">
         <div class="box-full">
             <div class="wrapper">
-                <p class="center">Footer</p>
+                <p class="center light">Footer</p>
             </div>
         </div>
     </footer>
+
+    <script src="./assets/bower_components/jquery/dist/jquery.min.js"></script>
 
 </body>
 </html>
