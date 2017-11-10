@@ -1,0 +1,22 @@
+{
+  "name": "assets",
+  "homepage": "https://github.com/m1xf1t/skelly",
+  "authors": [
+    "PJ <pjbell.me@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "waypoints": "^4.0.1",
+    "jquery": "^3.2.1",
+    "jquery-sticky": "sticky#^1.0.4"
+  }
+}

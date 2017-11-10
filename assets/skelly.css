@@ -1,0 +1,228 @@
+/* 
+ * Name: Skelly
+ * Author: PJ Bell
+ * Date: November 8, 2017
+ * Version: 1.0.0
+ */
+@import './mobile.css';
+* {
+    margin:0;
+    padding:0;
+    border:0;
+}
+a {
+    color:#000;
+    text-decoration: none;
+}
+html,body {
+    height:100%;
+    font-family:'Helvetica', sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
+}
+.center {
+    text-align:center;
+}
+section {
+    position:relative;
+    margin:0;
+    padding:0;
+}
+section .dark-overlay {
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:rgba(0,0,0,.6);
+}
+section.full {
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    position:relative;
+}
+section.auto {
+    width:100%;
+    height:auto;
+    margin:0;
+    padding:0;
+    position:relative;
+}
+.foreground {
+    position:relative;
+    z-index:9;
+}
+.box-full {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    display: table;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.box-full .wrapper {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: table-cell;
+    vertical-align: middle;
+}
+.pull-right {
+    float:right;
+}
+.pull-left {
+    float:left;
+}
+.clear {
+    clear:both;
+}
+.transition,
+.transition:hover {
+    -webkit-transition-property: width, color, background, margin, padding, opacity, border, text-indent, top, bottom, left, right;
+    -webkit-transition-duration: .2s, .2s;
+    -webkit-transition-timing-function: linear, ease-in;
+    -moz-transition-property: width, color, background, margin, padding, opacity, border, text-indent, top, bottom, left, right;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: linear, ease-in;
+    -o-transition-property: width, color, background, margin, padding, opacity, border, text-indent, top, bottom, left, right;
+    -o-transition-duration: .2s;
+    -o-transition-timing-function: linear, ease-in
+}
+.wf {
+    border:1px solid #000;
+}
+.hide {
+    display:none;
+}
+.stick-top {
+    position:-webkit-sticky;
+    position:sticky;
+    top:0;
+}
+.desktop-menu {
+    display:block;
+}
+.mobile-menu {
+    display:none;
+}
+
+/* === Typography === */
+.title {
+    font-size:40px;
+    letter-spacing:2px;
+}
+.sub-title {
+    font-size:20px;
+    font-weight:200;
+}
+.body-copy {
+    font-size:16px;
+}
+
+/* === Colors === */
+.light {
+    color:#fff;
+}
+.light-bg {
+    background:#fff;
+}
+.dark {
+    color:#000;
+}
+.dark-bg {
+    background:#000;
+}
+
+
+/* === Round Corners === */
+.round {
+    border-radius:3px;
+}
+
+/* === Navigation === */
+nav.shadow {
+    box-shadow: 0px 3px 3px #bfbfbf; 
+}
+nav.fixed {
+    position:fixed;
+    z-index:999999;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+}
+nav {
+    width:100%;
+    height:80px;
+}
+nav ul:first-child {
+    float:left;
+}
+nav ul:last-child {
+    float:right;
+}
+nav ul:first-child li:first-child {
+    margin-left:25px;
+}
+nav ul:last-child li:last-child {
+    margin-right:25px;
+}
+nav ul li {
+    display:inline;
+    line-height:80px;
+    margin-right:20px;
+}
+nav ul li a:hover {
+    color:#666;   
+}
+nav ul li a i {
+    font-size:22px;
+    position: relative;
+    top: 3px;
+}
+nav ul li.brand {
+    margin-right:30px !important;
+    font-weight:800;
+    font-size:20px;
+}
+nav ul li.nav-btn a {
+    background:#000;
+    border:1px solid #fff;
+    color:#fff;
+    padding:10px 15px 10px 15px;
+}
+nav ul li.nav-btn a i {
+    margin-right:6px;
+}
+nav ul li.nav-btn a:hover {
+    background:none;
+    border:1px solid #000;
+    color:#000;
+    padding:10px 15px 10px 15px;
+}
+.mobile-nav {
+    display:none;
+}
+
+
+/* === Footer === */
+footer {
+    width:100%;
+    height:100px;
+}
+
+
+
